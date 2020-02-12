@@ -38,12 +38,12 @@ app.post("/send", function(req, res) {
     `;
 
     let transporter = nodemailer.createTransport({
-        host: "smtp.yandex.com",
+        host: "smtp.ethereal.email",
         port: 465,
-        secure: true, // true for 465, false for other ports
+        secure: true,
         auth: {
-            user: 'ykhirfan@yandex.com', // generated ethereal user
-            pass: 'Lifofifo10' // generated ethereal password
+            user: 'testAccount.user',
+            pass: 'testAccount.pass'
         },
         tls: {
             rejectUnauthorized: false
@@ -52,11 +52,11 @@ app.post("/send", function(req, res) {
 
     // send mail with defined transport object
     let mailOptions = {
-        from: '"Nodemailer Contact 👻" <ykhirfan@yandex.com, // sender address"',
-        to: "tio.uk@msn.com", // list of receivers
-        subject: "Node Contact Request ✔", // Subject line
-        text: "Hello world?", // plain text body
-        html: output // html body
+        from: 'Fred Foo 👻" <foo@example.com>',
+        to: "bar@example.com, baz@example.com",
+        subject: "Hello ✔",
+        text: "Hello world?",
+        html: output
     };
     transporter.sendMail(mailOptions, function(error, res) {
         if (error) {
@@ -73,70 +73,6 @@ app.post("/send", function(req, res) {
 
 
 });
-
-// var name = $('.name').val()
-// var email = $('.email').val()
-//  var phoneNumber = $('.phone').val()
-//  var message = $('.message').val()
-//  var statusElement = $('.status')
-//  statusElement.empty()
-
-//  var data = {
-//     members: [{
-//             email_address: email,
-//             status: "subscribed",
-//             merge_fields: {
-//                 FNAME: firstName,
-//                 LNAME: lastName
-//             }
-//         }
-
-//     ]
-// };
-
-// // console.log("It works!");
-
-// // $(document).ready(function() {
-// //     $('.btnContact').click(function(event) {
-
-
-// //         console.log('button clicked');
-
-// //         var name = $('.name').val()
-// //         var email = $('.email').val()
-// //         var phoneNumber = $('.phone').val()
-// //         var message = $('.message').val()
-// //         var statusElement = $('.status')
-// //         statusElement.empty()
-
-// //         if (email.length > 5 && email.includes('@') && email.includes('.')) {
-// //             statusElement.append('<div>Email is valid</div>')
-
-// //         } else {
-// //             event.preventDefault()
-// //             statusElement.append('<div>Email is not valid</div>')
-// //         }
-
-// //         if (phoneNumber.length > 6) {
-// //             statusElement.append('<div>Phone number is valid</div>')
-// //         } else {
-// //             event.preventDefault()
-// //             statusElement.append('<div>Phone number is not valid</div>')
-// //         }
-
-// //         if (message.length > 20) {
-
-// //             statusElement.append('<div>message is valid</div>')
-// //         } else {
-// //             event.preventDefault()
-// //             statusElement.append('<div>Message is not valid</div>')
-// //         }
-
-// //     })
-
-// // });
-
-
 
 app.listen(process.env.PORT || 3000, function() {
 
