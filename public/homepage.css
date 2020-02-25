@@ -1,3 +1,5 @@
+ /* had to make the margin and padding 0 to get rid of the white space on the right,  */
+ 
  body {
      width: 100%;
      height: 100%;
@@ -56,6 +58,7 @@
      margin-left: 20px;
  }
  /* navigation bar */
+ /* this will allow the navbar to always be there while scrolling through the page.  */
  
  .navbar {
      padding: 0 0 4.5rem;
