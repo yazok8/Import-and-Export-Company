@@ -1,0 +1,271 @@
+ /* had to make the margin and padding 0 to get rid of the white space on the right,  */
+ 
+ body {
+     width: 100%;
+     height: 100%;
+     font-family: "Montserrat";
+     text-align: center;
+     align-items: center;
+     margin-left: 0px;
+     padding: 0px;
+     overflow-x: hidden;
+ }
+ 
+ #title {
+     text-align: left;
+ }
+ 
+ .col-lg-6{
+
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ 
+ /* .container-fluid {
+     /* background-image: url(images/importService.jpg); */
+     /* padding: 3% 15% 9%; */
+     /* padding-top: 2%; */
+     /* background-repeat: no-repeat; */
+     /* background-size: cover; */
+     
+/* } */
+ 
+ .navbar-logo {
+     font-family: "Ubuntu";
+     font-size: 2.5rem;
+     font-weight: bold;
+     margin-left: 20px;
+     color: rgb(255, 255, 255);
+ }
+ 
+ .coloured-section {
+     color: #fff;
+ }
+ /* .title-image {
+    width: 50%;
+    transform: initial;
+    position: absolute;
+    right: 20%;
+    margin-top: 10%;
+} */
+ 
+ p {
+     color: black;
+     padding-left: 20px;
+ }
+ /* heading section */
+ 
+ /* .big-heading {
+     font-family: "Montserrat-light";
+     color: rgb(255, 255, 255);
+     font-size: 3.5rem;
+     font-weight: Bold;
+     line-height: 1.5;
+     margin-top: 0;
+     margin-left: 20px;
+ } */
+ /* navigation bar */
+ /* this will allow the navbar to always be there while scrolling through the page.  */
+ 
+ .top-nav {
+     position: fixed;
+     background-color: #F8F8F8;
+     margin-bottom: 20px;
+ }
+ 
+ .nav-item {
+     padding: 0 10px;
+ }
+ 
+ .nav-link {
+     font-size: 1.2rem;
+     font-family: "Montserrat-light";
+ }
+ 
+ nav .navbar-nav li a {
+     color: rgb(255, 255, 255) !important;
+     font-weight: bold;
+ }
+ /* about section */
+ 
+ #about {
+     padding: 0;
+     text-align: center;
+ }
+ 
+ .Mission-column {
+     padding: 3% 2%;
+ }
+ 
+ .Vission-column {
+     padding: 3% 2%;
+ }
+ 
+ .Goals-column {
+     padding: 3% 2%;
+ }
+ 
+ .intro-gsk {
+     text-align: center;
+     padding-top: 10px;
+     font-weight: bold;
+     color: black;
+     margin-top: 20px;
+ }
+
+ .card{
+
+    margin: 20px;
+
+ }
+ .background-image{
+   
+    width: 100%;
+    background-repeat: no-repeat;
+    /* margin-top: rem; */
+    padding-top: 20px;
+    margin-bottom: 0;
+    /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
+ }
+ /* services */
+ 
+ #services {
+     padding: 7% 15% 7% 15%;
+     position: relative;
+     /* z-index: 1; */
+ }
+ 
+ .services-box {
+     text-align: center;
+     padding: 5%;
+ }
+ 
+ .icon {
+     color: #ef8172;
+     margin-bottom: 1rem;
+     align-items: center;
+ }
+ 
+ .services {
+     color: #AFAFAF;
+ }
+ /* products */
+ 
+ .product-img {
+     border-radius: 100%;
+     width: 10%;
+     margin: 20px;
+ }
+ 
+ .coffee-text {
+     font-size: 2rem;
+     line-height: 1.5;
+     font-weight: bold;
+ }
+ 
+ .herbs-text {
+     font-size: 2rem;
+     line-height: 1.5;
+     font-weight: bold;
+ }
+ 
+ .nuts-text {
+     font-size: 2rem;
+     line-height: 1.5;
+     font-weight: bold;
+ }
+ /* we added the padding here to move the items away from the text */
+ 
+ .carousel-item {
+     padding: 7% 15%;
+ }
+ 
+ #products {
+     background-color: #c2c2c5;
+ }
+ /* Press */
+ 
+ #press {
+     background-color: #c2c2c5;
+     text-align: center;
+     padding-bottom: 3%;
+ }
+ /* contact us seciton */
+ 
+ .contact-form {
+     background: #fff;
+     width: 70%;
+ }
+ 
+ .contact-form .name {
+     border-radius: 1rem;
+ }
+ 
+ .contact-form .email {
+     border-radius: 1rem;
+ }
+ 
+ .contact-form .phone {
+     border-radius: 1rem;
+ }
+ 
+ .contact-form .message {
+     border-radius: 1rem;
+ }
+ 
+ .contact-image {
+     text-align: center;
+ }
+ 
+ .contact-image img {
+     border-radius: 3rem;
+     width: 11%;
+     margin-top: -3%;
+     transform: rotate(29deg);
+ }
+ 
+ .contact-form form {
+     padding-top: 10%;
+ }
+ 
+ .contact-form form .row {
+     margin-bottom: -7%;
+ }
+ 
+ .contact-form h3 {
+     margin-bottom: 2%;
+     margin-top: -10%;
+     text-align: center;
+     color: #0062cc;
+ }
+ 
+ .contact-form .btnContact {
+     width: 50%;
+     border: none;
+     border-radius: 1rem;
+     padding: 1.5%;
+     background: #dc3545;
+     font-weight: 600;
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ .btnContact {
+     width: 50%;
+     border-radius: 1rem;
+     padding: 1.5%;
+     color: #fff;
+     background-color: #0062cc;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ .col-md-6 {
+     margin-top: 0;
+     padding: 0;
+ }
+ /* * {
+     background: #000 !important;
+     color: #0f0 !important;
+     outline: solid #f00 1px !important;
+ } */
